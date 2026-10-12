@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Product Inventory Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Product Inventory Dashboard</h1>
+        <p class="subtitle">Manage Products & Analyze Inventory</p>
+
+        <button id="addProductBtn">Add New Product</button>
+
+        <div class="analytics">
+            <div class="card">
+                <h3>Total Products</h3>
+                <p id="totalProducts">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Total Inventory Value</h3>
+                <p id="totalValue">$0</p>
+            </div>
+
+            <div class="card">
+                <h3>Affordable Products</h3>
+                <p id="affordableCount">0</p>
+            </div>
+        </div>
+
+        <h2>Product Inventory</h2>
+
+        <div id="productList" class="product-list"></div>
+
+        <h2>Affordable Products (Under $200)</h2>
+        <div id="affordableList" class="product-list"></div>
+
+        <h2>Formatted Report</h2>
+        <ul id="reportList"></ul>
+
+        <button id="searchProductBtn">Search Product</button>
+        <p id="searchResult"></p>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
